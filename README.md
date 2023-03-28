@@ -11,7 +11,7 @@ This script performas a partial conversion of a Markdown file to ReStructured Te
 *   Hyperlink format
 *   Page reference links
 *   less-than and greater-than symbols
-*   Line breaks (<br>, <br />)
+*   Line breaks (\<br\>, \<br /\>)
 *   Bold text formatting (\*\*\* -> \*\*)
 *   bash and json code-block designation
 *   code-block termination (```)
