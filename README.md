@@ -3,7 +3,7 @@
 ## Description
 This script performas a partial conversion of a Markdown file to ReStructured Text file. It is not capable of performing a full conversion and some manual editing of the resulting .rst file is still necessary; howver, it does capture the majority of comment syntaxial elements (see list below). The intent is to reduce the amount of time spent performing the conversion. Depending on the complexity of the page and the number of captured elements, it can easily reduce the time spent on the conversion from 50-75%. 
 
-*IMPORTANT*: This script was written for compatibility with the MacOS version of sed. The version of sed on Linux systems will (at this time) throw an error.
+*IMPORTANT*: This script was written for compatibility with the MacOS version of sed. The version of sed on Linux systems may throw an error. If this occurs please submit an issue in Github.
 
 ### Supported Syntax Elements
 *   Convert tabs to spaces (2)

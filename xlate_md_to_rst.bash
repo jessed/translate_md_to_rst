@@ -123,13 +123,13 @@ s/```json/.. code-block:: json\n/;
 s/^ *```$//;
 
 # Convert numerical bullet items
-s/[[:digit:]]+. +/#. /;
+s/^([[:space:]]*)[[:digit:]]+\.\s*/\1#. /;
 
 # Convert in-line code-blocks to RST format
 s/```/``/g
 
 # updates templatized json examples to have proper json formatting
-s/: {{(.+)}}/: "{{\1}}"/;
+s/: \{\{(.+)\}\}/: "{{\1}}"/;
 
 # Get rid whitespace indentation on otherwise blank lines
 s/^ +$//;
