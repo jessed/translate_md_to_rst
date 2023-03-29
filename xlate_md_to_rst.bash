@@ -96,7 +96,7 @@ s/\t/  /g;
 s/\.md/.html/g;
 
 # Update single-line HTML comments
-s/<!--\s?(.+)\s?-->/.. \1\n/;
+s/<!--[[:space:]]?(.+)[[:space:]]?-->/.. \1\n/;
 
 # Update embadded image links
 s/^.*!\((.+)\).*/.. image:: \1/;
@@ -110,7 +110,7 @@ s/ <#.*>`_/`/;
 # Convert less-than and greater-than syntax to the actual charaters
 s/&lt;/</g;
 s/&gt;/>/g;
-s/<br(\s?\/)?>//g;
+s/<br([[:space:]]?\/)?>//g;
 
 # convert Markdown bold (***) to RST bold (**)
 s/\*\*\*/**/g;
@@ -123,7 +123,7 @@ s/```json/.. code-block:: json\n/;
 s/^ *```$//;
 
 # Convert numerical bullet items
-s/^([[:space:]]*)[[:digit:]]+\.\s*/\1#. /;
+s/^([[:space:]]*)[[:digit:]]+\.[[:space:]]+/\1#. /;
 
 # Convert in-line code-blocks to RST format
 s/```/``/g
